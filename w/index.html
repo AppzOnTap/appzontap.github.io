@@ -7,4 +7,21 @@
       
       
     </body>
+    <script>
+        const settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/minutely?lat=39.3&lon=-85.2",
+            "method": "GET",
+            "headers": {
+                "X-RapidAPI-Key": "4d027c2fa0mshe3419af95a4fc6ap13bbf4jsnc16427a85f25",
+                "X-RapidAPI-Host": "weatherbit-v1-mashape.p.rapidapi.com"
+            }
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            
+        });
+    </script>
 </html>
